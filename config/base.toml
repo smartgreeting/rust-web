@@ -1,0 +1,12 @@
+[database]
+url = "postgres://user:pass@localhost/db"
+max_connections = 20
+
+[auth]
+jwt_secret = "your_jwt_secret_key"
+jwt_exp = 3600
+refresh_exp = 86400
+
+[rate_limit]
+capacity = 100
+fill_rate = 1
